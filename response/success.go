@@ -11,6 +11,11 @@ type SuccessResponse struct {
 	Data    interface{}
 }
 
+// GetData implements Response.
+func (s *SuccessResponse) GetData() interface{} {
+	panic("unimplemented")
+}
+
 func OK(msg string, data interface{}) Response {
 	return success(msg, data, http.StatusOK)
 }

@@ -2,7 +2,7 @@ package response
 
 type Response interface {
 	StatusCode() int
-	getBody() ([]byte, error)
+	GetBody() ([]byte, error)
 	Error() string
-	getData() interface{}
+	GetData() interface{}
 }
